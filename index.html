@@ -5,54 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>elipsi</title>
     <link rel="stylesheet" href="src/output.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
 <!-- im tryna make a base ui that i will use for everything | i sould have used jsx 🥀 -->
 <body class="flex flex-col h-screen">
     <!-- Topbar -->
-    <div class="h-14 bg-zinc-950 flex items-center px-4 justify-center w-59" >
-        <div class="relative">
-            <form action="" class="flex items-center justify-center">
-            <!-- search input -->
-            <input type="text" placeholder="Search" class="w-full sm:w-80 bg-slate-950 h-10 px-4 rounded-full border-2 border-slate-800 placeholder:text-white text-white :outline-none"/>
-            <button class="absolute right-2 ">
-                <!-- search button  -->
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search">
-                    <path d="m21 21-4.34-4.34"/>
-                    <circle cx="11" cy="11" r="8"/>
-                </svg>
-            </button>
-        </form>
-        </div>
+<div class="h-14 bg-zinc-950 flex items-center px-4 justify-between w-full">
+    <!-- Burger menu -->
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
+        </svg>
+    </button>
+
+    <!-- Logo and site name (hidden on mobile) -->
+    <div class="hidden sm:flex items-center gap-2">
+        <div class="text-white">logo</div>
+        <span class="text-white">elipsi</span>
     </div>
-    <!-- selection burger/menu button -->
-    <div class="absolute top-0 left-0 w-14 h-14 flex items-center justify-center">
-        <button>
+
+    <!-- Search bar (centered) -->
+    <form class="flex items-center justify-center flex-1 mx-4">
+        <input type="text" placeholder="Search" class="w-full sm:w-80 bg-slate-950 h-10 px-4 rounded-full border-2 border-slate-800 placeholder:text-white text-white outline-none"/>
+        <button class="relative right-10">
             <svg xmlns="http://www.w3.org/2000/svg" 
-            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
-                <path d="M4 5h16"/><path d="M4 12h16"/>
-                <path d="M4 19h16"/>
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/>
             </svg>
         </button>
-    </div> 
-    <!-- theme dark/light mode swaper -->
-    <div class="absolute top-0 right-0 w-14 h-14 flex items-center justify-center">
-        <button>
-            <svg xmlns="http://www.w3.org/2000/svg" 
-                width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon">
-                <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.34.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
-            </svg>
-        </button>
-    </div>
-    <!-- site's logo -->
-    <div class="absolute top-0 left-14 w-14 h-14 flex items-center justify-center bg-zinc-950 hidden text-white sm:flex ">
-        logo 
-    </div>
-    <!-- sites name being displayed -->
-    <div class="absolute top-0 left-28 w-20 h-14 flex items-center justify-center bg-zinc-950 hidden text-white sm:flex ">
-        <span> elipsi </span>
-    </div>
+    </form>
+
+    <!-- Theme switcher -->
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.34.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+        </svg>
+    </button>
+</div>
+
     <!-- Content area -->
     <div class="flex flex-1">
         <!-- Sidebar -->
@@ -60,26 +52,26 @@
             <!-- ff14 section -->
             <div class="h-14 flex items-center justify-center ">
                 <button>
-                    <img src="/assets/game/ffxiv.png" alt="ffxiv" >
+                    <img src="assets/game/ffxiv.png" alt="ffxiv" >
                 </button>
             </div>
             <!-- warframe section -->
             <div class="h-14 flex items-center justify-center">
                 <button class="items-center justify-center">
-                    <img src="/assets/game/warframe.png" alt="wf" class="items-center justify-center">
+                    <img src="assets/game/warframe.png" alt="wf" class="items-center justify-center">
                 </button>
             </div>
             <!-- masterduel seciton -->
             <div class="h-14 flex items-center justify-center">
                 <button class="items-center justify-center">
-                    <img src="/assets/game/masterduel.png" alt="md" >
+                    <img src="assets/game/masterduel.png" alt="md" >
                 </button>
             </button>
             </div>
             <!-- i dont wanna add this no more-->
             <div class="h-14 flex items-center justify-center">
                 <button class="items-center justify-center">
-                    <img src="/assets/game/anilist.png" alt="">
+                    <img src="assets/game/anilist.png" alt="">
                 </button>
             </div> 
             
