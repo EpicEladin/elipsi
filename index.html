@@ -10,17 +10,17 @@
 <!-- im tryna make a base ui that i will use for everything | i sould have used jsx 🥀 -->
 <body class="flex flex-col h-screen">
     <!-- Topbar -->
-<div class="h-14 bg-zinc-950 flex items-center px-4 justify-between w-full">
+<div class="h-14 bg-zinc-950 flex items-center px-3 justify-between w-full">
     <!-- Burger menu -->
     <button>
         <svg xmlns="http://www.w3.org/2000/svg" 
-        width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
         </svg>
     </button>
 
     <!-- Logo and site name (hidden on mobile) -->
-    <div class="hidden sm:flex items-center gap-2">
+    <div class="hidden sm:flex items-center gap-2 px-4">
         <div class="text-white">logo</div>
         <span class="text-white">elipsi</span>
     </div>
@@ -39,7 +39,7 @@
     <!-- Theme switcher -->
     <button>
         <svg xmlns="http://www.w3.org/2000/svg" 
-            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.34.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
         </svg>
     </button>
@@ -52,11 +52,11 @@
             <!-- ff14 section -->
             <div class="h-14 flex items-center justify-center ">
                 <button>
-                    <img src="assets/game/ffxiv.png" alt="ffxiv" >
+                    <img src="assets/game/ffxiv.png" alt="ffxiv" class="items-center justify-center">
                 </button>
             </div>
             <!-- warframe section -->
-            <div class="h-14 flex items-center justify-center">
+            <div class="h-9 flex items-center justify-center">
                 <button class="items-center justify-center">
                     <img src="assets/game/warframe.png" alt="wf" class="items-center justify-center">
                 </button>
@@ -64,7 +64,7 @@
             <!-- masterduel seciton -->
             <div class="h-14 flex items-center justify-center">
                 <button class="items-center justify-center">
-                    <img src="assets/game/masterduel.png" alt="md" >
+                    <img src="assets/game/masterduel.png" alt="md" class="items-center justify-center">
                 </button>
             </button>
             </div>
@@ -78,15 +78,18 @@
         </div>
         <div class="absolute bottom-2 left-3 border-black hidden sm:flex">
         <button>
-            <svg xmlns="http://www.w3.org/2000/svg"
-            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-icon lucide-book">
+            <svg xmlns="http://www.w3.org/2000/svg" class="items-center justify-center"
+            width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-icon lucide-book">
             <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
         </button>
         </div>
         <!-- Main -->
         <main class="flex-1 p-4 bg-stone-800 text-white ">
-            <div class="text-2xl">
-                <h1> Haloo this is my website</h1>
+            <div class="text-2xl flex items-center justify-center ">
+                <h1> elipsi </h1>
+            </div>
+            <div class="text-2xl flex items-center justify-center ">
+                <h1> Heya im Eladin and this is my personnal webstie  </h1>
             </div>
             <!-- <div class="text-lg">
                 i like games here is some exaples of games i like
@@ -94,6 +97,7 @@
             <div class="">
                 warframe, final fantasy 14 online, persona3/5, metaphor, stardew valley, bauders gate 3,cyberpunk 2077, hades/hades 2
             </div> -->
+            
 
         </main>
     </div>
