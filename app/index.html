@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elipsi</title>
+    <link rel="stylesheet" href="assets/input.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+</head>
+<!-- im tryna make a base ui that i will use for everything | i sould have used jsx 🥀 -->
+<body class="flex flex-col h-screen">
+    <!-- Topbar -->
+    <div class="h-14 bg-zinc-950 flex items-center px-4 justify-center w-59" >
+        <div class="relative">
+            <form action="" class="flex items-center justify-center">
+            <!-- search input -->
+            <input type="text" placeholder="Search" class="w-full sm:w-80 bg-slate-950 h-10 px-4 rounded-full border-2 border-slate-800 placeholder:text-white text-white :outline-none"/>
+            <button class="absolute right-2 ">
+                <!-- search button  -->
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search">
+                    <path d="m21 21-4.34-4.34"/>
+                    <circle cx="11" cy="11" r="8"/>
+                </svg>
+            </button>
+        </form>
+        </div>
+    </div>
+    <!-- selection burger/menu button -->
+    <div class="absolute top-0 left-0 w-14 h-14 flex items-center justify-center">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16"/><path d="M4 12h16"/>
+                <path d="M4 19h16"/>
+            </svg>
+        </button>
+    </div>
+    <!-- theme dark/light mode swaper -->
+    <div class="absolute top-0 right-0 w-14 h-14 flex items-center justify-center">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon">
+                <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.34.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+            </svg>
+        </button>
+    </div>
+    <!-- site's logo -->
+    <div class="absolute top-0 left-14 w-14 h-14 flex items-center justify-center bg-zinc-950 hidden text-white sm:flex ">
+        logo
+    </div>
+    <!-- sites name being displayed -->
+    <div class="absolute top-0 left-28 w-20 h-14 flex items-center justify-center bg-zinc-950 hidden text-white sm:flex ">
+        <span> elipsi </span>
+    </div>
+    <!-- Content area -->
+    <div class="flex flex-1">
+        <!-- Sidebar -->
+        <div class="w-14 bg-stone-900 p-2 hidden text-white flex-col items-center sm:flex">
+            <!-- ff14 section -->
+            <div class="h-14 flex items-center justify-center ">
+                <button>
+                    <img src="/assets/game/ffxiv.png" alt="ffxiv" >
+                </button>
+            </div>
+            <!-- warframe section -->
+            <div class="h-14 flex items-center justify-center">
+                <button class="items-center justify-center">
+                    <img src="/assets/game/warframe.png" alt="wf" class="items-center justify-center">
+                </button>
+            </div>
+            <!-- masterduel seciton -->
+            <div class="h-14 flex items-center justify-center">
+                <button class="items-center justify-center">
+                    <img src="/assets/game/masterduel.png" alt="md" >
+                </button>
+            </button>
+            </div>
+            <!-- i dont wanna add this no more
+            <div class="h-14 flex items-center justify-center">
+                <button class="items-center justify-center">
+                    <img src="/assets/game/anilist.png" alt="">
+                </button>
+            </div> 
+            -->
+        </div>
+        <div class="absolute bottom-2 left-3 border-black hidden sm:flex">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg"
+            width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-icon lucide-book">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+        </button>
+        </div>
+        <!-- Main -->
+        <main class="flex-1 p-4 bg-stone-800 text-white ">
+            <div class="text-2xl">
+                <h1> Haloo this is my website</h1>
+            </div>
+            <!-- <div class="text-lg">
+                i like games here is some exaples of games i like
+            </div>
+            <div class="">
+                warframe, final fantasy 14 online, persona3/5, metaphor, stardew valley, bauders gate 3,cyberpunk 2077, hades/hades 2
+            </div> -->
+
+        </main>
+    </div>
+    <!-- site diary -->
+    
+</body>
+</html>
